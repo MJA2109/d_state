@@ -29,6 +29,8 @@ if not api_call_arg:
 else:
 	for api_call in api_calls:
 		if api_call == api_call_arg:
+			print("API: GET " + api_call)
+			print("-------------------------------------------------")
 			print(json.dumps(api_calls[api_call], indent = 4))
 	    
 
